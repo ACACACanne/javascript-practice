@@ -63,6 +63,7 @@ console.log(num == str); // output: true (loose equality, type coercion)
 console.log(num === str); // output: false (strict equality, no type coercion)
 console.log(typeof num); // output: "number"
 console.log(typeof str); // output: "string"    
+
 //type coercion
 let result1 = '5' + 10; // '510' (string concatenation)
 let result2 = '5' - 2; // 3 (number subtraction, '5' is coerced to 5)
@@ -70,6 +71,13 @@ console.log(result1); // output: '510'
 console.log(result2); // output: 3  
 console.log(typeof result1); // output: "string"
 console.log(typeof result2); // output: "number"
+
+//transfer between number and string
+let first_num = "10"; // string
+let second_num = "20"; // string
+let sum = Number(first_num) + Number(second_num); // convert to numbers and add
+console.log("Sum:", sum); // output: 30
+console.log(typeof sum); // output: "number"
 
 let my_variable = "1" 
 console.log(my_variable + 1); // "11" (string concatenation)
@@ -84,12 +92,14 @@ console.log(isActive); // output: true
 console.log(isComplete); // output: false
 console.log(typeof isActive); // output: "boolean"
 console.log(typeof isComplete); // output: "boolean"    
+
 //boolean context
 if (isActive) {
     console.log("The feature is active.");  
 } else {
     console.log("The feature is inactive.");
 }   
+
 //truthy and falsy values
 let value1 = 0; // falsy
 let value2 = 1; // truthy
@@ -107,6 +117,7 @@ console.log(Boolean(value5)); // output: false
 console.log(Boolean(value6)); // output: false
 console.log(Boolean(value7)); // output: true
 console.log(Boolean(value8)); // output: true
+
 //conditional statements        
 let score = 85;
 if (score >= 90) {
@@ -120,3 +131,67 @@ else if (score >= 70) {
 else {
     console.log("Grade: F");        
 }
+
+//switch statement
+let day = 3;
+let dayName;
+switch (day) {
+    case 1: dayName = "Monday"; break;
+    case 2: dayName = "Tuesday"; break;
+    case 3: dayName = "Wednesday"; break;   
+    case 4: dayName = "Thursday"; break;
+    case 5: dayName = "Friday"; break;
+    case 6: dayName = "Saturday"; break;    
+    case 7: dayName = "Sunday"; break;
+    default: dayName = "Invalid day";        
+}
+console.log("Day:", dayName); // output: "Day: Wednesday"
+
+//ternary operator
+let age = 20;
+let canVote = (age >= 18) ? "Yes" : "No";
+console.log("Can vote:", canVote); // output: "Can vote: Yes"   
+
+//loops
+//for loop
+for (let i = 0; i < 5; i++) {
+    console.log("Iteration:", i);        
+}       
+//while loop
+let count = 0;
+while (count < 5) {
+    console.log("Count:", count);
+    count++;
+}
+//do-while loop
+let numCount = 0;   
+do {
+    console.log("NumCount:", numCount);
+    numCount++;
+} while (numCount < 5);
+
+//break and continue    
+for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+        break; // exit loop when i is 5
+    }   
+    console.log("Break Loop i:", i);
+}
+
+for (let i = 0; i < 10; i++) {
+    if (i % 2 === 0) {
+        continue; // skip even numbers
+    }   
+    console.log("Continue Loop i:", i); // only odd numbers will be printed
+}   
+
+//numbers vs strings
+let num = 100; // number
+let str = "100"; // string  
+console.log(num + 50); // output: 150 (number addition)
+console.log(str + "50"); // output: "10050" (string concatenation)  
+console.log(num == str); // output: true (loose equality, type coercion)
+console.log(num === str); // output: false (strict equality, no type coercion)
+console.log(typeof num); // output: "number"
+console.log(typeof str); // output: "string"        
+
