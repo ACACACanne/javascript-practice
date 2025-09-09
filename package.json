@@ -1,0 +1,22 @@
+{
+  "name": "javascript-practice",
+  "version": "1.0.0",
+  "description": "Learning the basic of JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "start" : "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ACACACanne/javascript-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ACACACanne/javascript-practice/issues"
+  },
+  "homepage": "https://github.com/ACACACanne/javascript-practice#readme",
+  "dependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
